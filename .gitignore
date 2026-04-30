@@ -1,7 +1,7 @@
 # Python
 __pycache__/
 *.pyc
-*/solution.py
+**/solution.py
 
 # Virtual environment
 venv/
@@ -12,3 +12,6 @@ env/
 
 # OS
 .DS_Store
+
+# etc
+*.log
