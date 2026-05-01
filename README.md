@@ -27,7 +27,11 @@ I am documenting my daily Python learning journey, including exercises, projects
 - Day 6 - Python Functions & Karel  
 - Day 7 - Hangman  
 - Day 8 - Function Parameters & Caesar Cipher  
-- Day 9 - Dictionaries, Nesting and the Secret Auction  
+- Day 9 - Dictionaries, Nesting and the Secret Auction
+- Day 10 - Functions with Outputs
+
+
+
 
 ---
 
@@ -36,7 +40,6 @@ I am documenting my daily Python learning journey, including exercises, projects
 Each day contains:
 - Practice exercises
 - Mini projects
-- Challenge solutions
 
 ---
 
