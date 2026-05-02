@@ -29,6 +29,7 @@ I am documenting my daily Python learning journey, including exercises, projects
 - Day 8 - Function Parameters & Caesar Cipher  
 - Day 9 - Dictionaries, Nesting and the Secret Auction
 - Day 10 - Functions with Outputs
+- Day 11 - Blackjack Capstone Project
 
 
 
