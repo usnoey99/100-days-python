@@ -17,7 +17,7 @@ I am documenting my daily Python learning journey, including exercises, projects
 
 ## 🚀 Progress
 
-### ✅ Completed Days (Day 1 - Day 9)
+### ✅ Completed Days (Day 1 - Day 12)
 
 - Day 1 - Working with Variables in Python to Manage Data  
 - Day 2 - Understanding Data Types and How to Manipulate Strings  
@@ -30,6 +30,7 @@ I am documenting my daily Python learning journey, including exercises, projects
 - Day 9 - Dictionaries, Nesting and the Secret Auction
 - Day 10 - Functions with Outputs
 - Day 11 - Blackjack Capstone Project
+- Day 12 - Number Guessing Project
 
 
 
