@@ -31,6 +31,7 @@ I am documenting my daily Python learning journey, including exercises, projects
 - Day 10 - Functions with Outputs
 - Day 11 - Blackjack Capstone Project
 - Day 12 - Number Guessing Project
+- Day 13 - Debugging
 
 
 

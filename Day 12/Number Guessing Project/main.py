@@ -1,5 +1,4 @@
 import random
-
 import art
 
 print("\n")
@@ -16,7 +15,7 @@ elif difficulty == "hard":
 else:
     print("Invalid. You have to type 'easy' or 'hard'.")
 
-answer = random.choice(range(1,101))
+answer = random.randint(1,100)
 
 while attempt > 0:
     print(f"You have {attempt} attempts remaining to guess the number.")
