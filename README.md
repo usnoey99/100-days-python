@@ -17,7 +17,7 @@ I am documenting my daily Python learning journey, including exercises, projects
 
 ## 🚀 Progress
 
-### ✅ Completed Days (Day 1 - Day 12)
+### Beginner
 
 - Day 1 - Working with Variables in Python to Manage Data  
 - Day 2 - Understanding Data Types and How to Manipulate Strings  
@@ -33,7 +33,12 @@ I am documenting my daily Python learning journey, including exercises, projects
 - Day 12 - Number Guessing Project
 - Day 13 - Debugging
 - Day 14 - Higher or Lower Game Project
-- Day 15 - Coffee Machine Project
+
+---
+
+### Intermediate
+- Day 15 - Local Development Environment Setup & the Coffee Machine Project
+- Day 16 - Object Oriented Programming (OOP)
 
 
 
