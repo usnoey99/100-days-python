@@ -203,7 +203,7 @@ question_data = [
       "type": "boolean",
       "difficulty": "medium",
       "category": "History",
-      "question": "Assyrian king Sennacherib&#039;s destruction of Babylon in 689 BCE was viewed as a triumph by other Assyrian citizens.",
+      "question": "Assyrian king Sennacherib's destruction of Babylon in 689 BCE was viewed as a triumph by other Assyrian citizens.",
       "correct_answer": "False",
       "incorrect_answers": [
         "True"

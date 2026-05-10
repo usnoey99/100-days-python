@@ -18,6 +18,11 @@ class QuizBrain:
 
     # TODO: checking if the answer was correct
     def check_answer(self, user_answer, correct_answer):
+        if user_answer.lower() == "t":
+            user_answer = "true"
+        elif user_answer.lower() == "f":
+            user_answer = "false"
+
         if user_answer.lower() == correct_answer.lower():
             print("You got it right!")
             self.score += 1
