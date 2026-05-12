@@ -64,9 +64,11 @@ screen.onkey(move_forwards(), "Up")
 - Runs when key is pressed (more immediate response)
 
 
-### Functions as Inputs
+### Higher Order Functions
 
-Higher Order Functions: takes another function as input, or returns a function
+Functions as Inputs
+
+takes another function as input, or returns a function
 
 ```Python
 def function_a(func):
