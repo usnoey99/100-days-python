@@ -10,13 +10,15 @@ The project is divided into 7 tasks, split into Part 1 and Part 2.
 
 ### 📝 Tasks
 
-Day 20 - Part 1 (Basics):
+Part 1 (Basics):
 
 1. Create the snake body
 2. Move the snake
 3. Control the snake
 
-Day 21 – Part 2 (Game Mechanics):
+
+Part 2 (Game Mechanics):
+
 4. Detect collision with food
 5. Create a scoreboard
 6. Detect collision with the wall
