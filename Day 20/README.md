@@ -1,4 +1,4 @@
-## Day 20 - Snake Game Project
+## Day 20 - Snake Game Project (Part 1)
 
 ---
 
