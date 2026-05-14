@@ -17,12 +17,10 @@ Day 20 - Part 1 (Basics):
 3. Control the snake
 
 Day 21 – Part 2 (Game Mechanics):
+
 4. Detect collision with food
-
 5. Create a scoreboard
-
 6. Detect collision with the wall
-
 7. Detect collision with itself
 
 
