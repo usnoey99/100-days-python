@@ -3,7 +3,7 @@ import random
 CAR_SHAPE = ["red_car.gif", "green_car.gif", "blue_car.gif", "white_car.gif", "yellow_car.gif", "truck.gif", "bus.gif"]
 
 STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 3
+MOVE_INCREMENT = 4
 
 
 class CarManager:
@@ -25,7 +25,7 @@ class CarManager:
         for car in self.all_cars:
             car.backward(self.car_speed)
             if car.shape() == "yellow_car.gif":
-                car.backward(self.car_speed + 2)
+                car.backward(self.car_speed + 3)
 
     def speed_up(self):
         self.car_speed += MOVE_INCREMENT

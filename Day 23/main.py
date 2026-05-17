@@ -70,6 +70,10 @@ while game_is_on:
             score.game_over()
             game_is_on = False
 
+    if player_turtle.xcor() < -290 or player_turtle.xcor() > 290:
+        score.game_over()
+        game_is_on = False
+
     # 5. Detect when the player reaches the finish line
     if player_turtle.ycor() >= FINISH_LINE_Y:
         score.increase_level()
