@@ -49,9 +49,9 @@ car_manager = CarManager()
 score = Scoreboard()
 
 screen.listen()
-screen.onkey(player_turtle.move, "Up")
-screen.onkey(player_turtle.move_left, "Left")
-screen.onkey(player_turtle.move_right, "Right")
+screen.onkeypress(player_turtle.move, "Up")
+screen.onkeypress(player_turtle.move_left, "Left")
+screen.onkeypress(player_turtle.move_right, "Right")
 
 
 game_is_on = True

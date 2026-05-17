@@ -3,7 +3,7 @@ import random
 CAR_SHAPE = ["red_car.gif", "green_car.gif", "blue_car.gif", "white_car.gif", "yellow_car.gif", "truck.gif", "bus.gif"]
 
 STARTING_MOVE_DISTANCE = 5
-MOVE_INCREMENT = 5
+MOVE_INCREMENT = 3
 
 
 class CarManager:
