@@ -9,7 +9,7 @@ class Ball(Turtle):
         self.shape("square")
         self.x_move = random.choice([5, -5])
         self.y_move = random.choice([5, -5])
-        self.move_speed = 0.08
+        self.move_speed = 0.05
 
     # 4-2 make the ball move
     def move(self):
@@ -25,10 +25,10 @@ class Ball(Turtle):
     def bounce_x(self):
         self.x_move *= -1
         self.move_speed *= 0.7
-        if self.move_speed < 0.03:
-            self.move_speed = 0.03
+        if self.move_speed < 0.01:
+            self.move_speed = 0.01
 
     def reset_position(self):
         self.goto(0,0)
-        self.move_speed = 0.1
+        self.move_speed = 0.05
         self.bounce_x()

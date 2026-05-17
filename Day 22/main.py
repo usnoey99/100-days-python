@@ -65,7 +65,7 @@ while game_is_on:
 
     # 8. Keep score
 
-    if score.score_left >= 21 or score.score_right >= 21:
+    if score.score_left >= 5 or score.score_right >= 5:
         score.game_over()
         game_is_on = False
 
