@@ -15,7 +15,6 @@ class CarManager:
         random_chance = random.randint(1,6)
         if random_chance == 1:
             new_car = Turtle(random.choice(CAR_SHAPE))
-            new_car.shapesize(stretch_len=2, stretch_wid=1)
             new_car.penup()
             random_y = random.randint(-6, 6) * 40 + 20
             new_car.goto(300, random_y)
