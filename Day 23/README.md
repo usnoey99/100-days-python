@@ -51,7 +51,6 @@ The game ends when the turtle collides with a car or when all levels are complet
 - Move Left: `Left`
 - Move Right: `Right`
 
-- Demo
 ![Demo 1 - Level Up and complete](demo_1.gif)
 ![Demo 2 - Game over](demo_2.gif)
 
