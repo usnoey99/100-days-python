@@ -4,11 +4,8 @@
 
 ### 📌 Overview
 Improving the previous Snake Game project by adding a high score tracking feature.
-
 If the user achieves a score higher than the previous high score and the game ends, the high score is updated and saved.
-
 This project focuses on learning how to work with the file system, including reading from and writing to files.
-
 Additionally, a Mail Merge mini project was completed to practice handling multiple files and automatically generating personalized letters.
 
 ---
