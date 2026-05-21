@@ -133,10 +133,8 @@ label["text"] = "Edit"
 ```
 Updates the label text using dictionary-style syntax.
 
-### Entry() & .get()
-Creates a text input box and retrieves the entered text.
+### .get()
 ```python
-input = tk.Entry()
 input.get()
 ```
 - `input.get()` runs immediately.
