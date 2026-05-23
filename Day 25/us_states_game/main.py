@@ -1,6 +1,5 @@
 import turtle
 import pandas
-from pandas.core.ops import missing
 
 BACKGROUND = "blank_states_img.gif"
 screen = turtle.Screen()

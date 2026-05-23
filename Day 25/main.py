@@ -1,8 +1,6 @@
 # Read cvs Files
 import csv
 
-from numpy.ma.extras import average
-from pandas.core.interchange.dataframe_protocol import DataFrame
 
 with open("weather_data.csv", "r") as data_file:
     weather_data = csv.reader(data_file)
