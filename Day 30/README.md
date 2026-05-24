@@ -63,7 +63,7 @@ Example:
 ```
 - `json.dump()`:
   Writes Python data into a JSON file.
-  ```json
+  ```python
   import json
   data = {"name": "John", "age": 25}
   with open("data.json", "w") as file:
@@ -72,13 +72,13 @@ Example:
 
 - `json.load()`:
   Reads JSON data from a file and converts it into a Python object.
-  ```json
+  ```python
   with open("data.json", "r") as file:
       data = json.load(file)
   ```
 - `json.update()`:
   Not a JSON function. It is a Python dictionary method used to update key-value pairs.
-  ```json
+  ```python
   data = {"name": "John"}
   data.update({"age": 25})
   ```
