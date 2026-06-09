@@ -32,20 +32,20 @@ response = requests.get("https://api.example.com/data", params=params)
 ```
 
 ### Twilio SMS Integration
-1.Twilio Setup
+- Twilio Setup
 
   1. Create a Twilio account at [https://www.twilio.com](https://www.twilio.com).
   2. Obtain your **Account SID** and **Auth Token** from the dashboard.
   3. Get a Twilio phone number (from which messages will be sent).
   4. (Free account) Verify the phone numbers you want to send messages to.
 
-2. Install Twilio Python SDK
+- Install Twilio Python SDK
 ```bash
 pip install twilio
 ```
 
 
-3. Basic Usage
+- Basic Usage
 ```python
 from twilio.rest import Client
 
@@ -66,7 +66,7 @@ message = client.messages.create(
 print(message.status)
 ```
 
-4. Sending via WhatsApp
+- Sending via WhatsApp
 ```python
 message = client.messages.create(
     body="Bring an umbrella ☂️ It will rain today!",
@@ -102,5 +102,6 @@ my_number = os.environ.get("MY_NUMBER")
 ```bash
 /usr/bin/python3.11 /home/yourusername/weather_check.py
 ```
+
 3. Set the time
   We can remove the `while True` loop; PythonAnywhere will handle the scheduling
