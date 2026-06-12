@@ -43,8 +43,6 @@ Example data:
 | Berlin | BER | 150 |
 | Tokyo | TYO | 700 |
 
----
-
 #### `FlightSearch`
 Responsible for communicating with the flight search API.
 
