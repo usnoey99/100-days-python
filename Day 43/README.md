@@ -10,7 +10,14 @@ Upgrading a personal CV website by applying colors, fonts, spacing, borders, and
 ---
 
 ### 📝 Tasks
-- 
+- Apply CSS to an existing HTML CV website
+- Connect an external stylesheet to an HTML document
+- Style text, colors, and page layout
+- Use CSS selectors to target specific elements
+- Apply classes and IDs for custom styling
+- - Debug CSS styling issues using browser tools
+- Improve the overall appearance of the CV website
+
 
 ---
 
