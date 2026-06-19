@@ -116,7 +116,7 @@ html = response.text
 ```
 Headers may be required to avoid blocking.
 
-### ### select() and CSS Selectors
+### select() and CSS Selectors
 The `select()` method allows selecting elements using CSS selectors.
 
 Example:
