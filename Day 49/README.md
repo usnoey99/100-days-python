@@ -3,9 +3,11 @@
 ---
 
 ### 📌 Overview
-Built a LinkedIn job automation bot using Selenium WebDriver.
+Built a LinkedIn job search automation script using Selenium WebDriver.
 
-The bot searches for jobs based on a specified role, filters listings posted within the last 7 days, saves all matching job postings, and follows the companies that posted them.
+The script searches for jobs based on a specified keyword, applies filters such as location radius and “Past week” posting date, and interacts with dynamic web UI elements.
+
+Due to LinkedIn’s anti-bot protection mechanisms (e.g., checkpoint/captcha), full end-to-end automation may be interrupted during execution.
 
 ---
 
@@ -13,11 +15,11 @@ The bot searches for jobs based on a specified role, filters listings posted wit
 
 * Automated LinkedIn login using Selenium
 * Searched for jobs based on a specified keyword
+* Adjusted job search location radius dynamically
 * Filtered job listings posted within the last 7 days
-* Saved job postings for later review
-* Followed companies associated with job listings
-* Handled browser interactions and dynamic web elements
-* Automated repetitive job search tasks
+* Handled dynamic web elements and UI state changes
+* Used JavaScript execution for reliable UI interactions
+* Implemented explicit waits for stable automation flow
 
 ---
 
@@ -25,11 +27,11 @@ The bot searches for jobs based on a specified role, filters listings posted wit
 
 ### Selenium Waits
 
-Modern websites often load content dynamically.
+Modern websites load content dynamically, so element availability cannot be assumed immediately.
 
-Using `time.sleep()` is unreliable because the page may load slower or faster.
+Using `time.sleep()` is unreliable because load times vary.
 
-Explicit waits allow Selenium to continue only when an element is ready.
+Explicit waits ensure Selenium proceeds only when elements are ready for interaction.
 
 Example:
 ```python
@@ -37,9 +39,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 element = WebDriverWait(driver, 15).until(
-    EC.element_to_be_clickable(
-        (By.ID, "button")
-    )
+    EC.presence_of_element_located((By.TAG_NAME, "main"))
 )
 ```
 
@@ -57,27 +57,28 @@ driver.execute_script(
 )
 ```
 
-### Handling SVG Elements
+### Handling SVG / Dynamic UI Elements
+Modern web applications often use nested or dynamically generated DOM structures, including SVG icons.
 
-Icons are often created using SVG.
-
-Instead of clicking the SVG directly, locate the clickable parent.
+Instead of targeting icons directly, interactions should be performed on their parent or container elements.
 
 Example:
 ```python
 location_button = driver.find_element(
     By.XPATH,
-    "//svg[@id='location-marker-small']/ancestor::div[@role='button']"
+    "//div[@role='button'][.//p[contains(text(),'km')]]"
 )
 ```
 
 ### Filter Automation
 
-Automated job filtering:
+Automated job filtering includes interacting with dynamic UI components such as sliders and dropdown filters.
 
-- Location radius adjustment
-- Date posted filter selection
-- Applying search conditions
+Key actions:
+
+- Adjusting location radius using a slider (React-based UI)
+- Selecting “Past week” filter for job postings
+- Applying filters via “Show results” button
 
 Example:
 ```python
@@ -86,8 +87,11 @@ slider = driver.find_element(
     "//input[@type='range']"
 )
 
-driver.execute_script(
-    "arguments[0].value='40';",
-    slider
-)
+driver.execute_script("""
+    arguments[0].focus();
+    arguments[0].value = '40';
+    arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+    arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+    arguments[0].dispatchEvent(new Event('blur', { bubbles: true }));
+""", slider)
 ```
