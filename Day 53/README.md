@@ -1,4 +1,4 @@
-### ## Day 53 - Capstone Project: Data Entry Job Automation
+## Day 53 - Capstone Project: Data Entry Job Automation
 
 ---
 
