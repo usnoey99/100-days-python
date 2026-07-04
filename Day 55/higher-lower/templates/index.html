@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess Game</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        img {
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 80%;
+            max-width: 300px;
+            font-size: 24px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 80%;
+            max-width: 300px;
+            font-size: 24px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+
+<body>
+
+<h1>Guess a number (0~99)</h1>
+
+<img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGgzeTZteTJ6c3BzcDA3M2ZqdTRsdnpwanUxam8xM2J6c2VpZndiMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUn3CftPBajoflzROU/giphy.gif">
+
+<form action="/guess" method="GET">
+    <input type="number" name="guess" min="0" max="99" required>
+    <button type="submit">Guess</button>
+</form>
+
+</body>
+</html>

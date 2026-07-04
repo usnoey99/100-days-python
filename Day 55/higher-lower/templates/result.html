@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess Game</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        img {
+            width: 80%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 80%;
+            max-width: 300px;
+            font-size: 24px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 80%;
+            max-width: 300px;
+            font-size: 24px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+<h1 style="color: {{ color }}">{{ message }}</h1>
+
+<img src="{{ gif }}">
+
+{% if message != "You found me!" %}
+
+<form action="/guess" method="GET">
+    <input type="number" name="guess">
+    <button>Guess</button>
+</form>
+
+{% else %}
+
+<a href="/">
+    <button style="font-size: 20px; padding: 10px;">
+        Start New Game
+    </button>
+</a>
+
+{% endif %}
+
+</body>
+</html>
