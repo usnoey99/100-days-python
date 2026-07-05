@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yeonsu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top-container">
+      <img class="top-cloud" src="{{ url_for('static', filename='images/cloud.png') }}" alt="cloud-img">
+      <h1>I'm Yeonsu.</h1>
+      <h2>a programmer</h2>
+      <img class="bottom-cloud" src="{{ url_for('static', filename='images/cloud.png') }}" alt="cloud-img">
+      <img src="{{ url_for('static', filename='images/mountain.png') }}" alt="mountain-img">
+    </div>
+    <div class="middle-container">
+      <div class="profile">
+        <img src="{{ url_for('static', filename='images/profile_pic.png') }}" alt="profile-pic">
+        <h2>Hello.</h2>
+        <p class="intro">An aspiring Data Analyst passionate about data analysis, visualization, and solving real-world problems through data-driven insights.</p>
+      </div>
+      <hr>
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="code-img" src="https://media1.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e473j7uwuxasvxi7q2onqxqrgn6wc140azeqyez7mzg&rid=giphy.gif&ct=s" alt="code-gif">
+          <br>
+          <h3>Development</h3>
+          <p>Python, HTML, CSS, Bootstrap, C/C++, Java.</p>
+        </div>
+        <div class="skill-row">
+          <img class="data_analyst-img" src="{{ url_for('static', filename='images/data_analyst.png') }}" alt="data_analyst-img">
+          <br>
+          <h3>Continuous Learning</h3>
+          <p>I am currently building my programming and data analysis skills through hands-on projects. I enjoy learning new technologies and applying them to real-world problems.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Let’s talk about data and insights.</h3>
+        <p class="contact-message">
+          As an aspiring Data Analyst, I enjoy working with data, solving problems, and discovering insights that matter.
+          Feel free to reach out for collaboration or opportunities.
+        </p>
+        <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
+      </div>
+    </div>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://github.com/usnoey99">Github</a>
+      <p class="copyright">© 2026 Yeonsu</p>
+    </div>
+  </body>
+</html>
