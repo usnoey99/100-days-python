@@ -6,7 +6,7 @@
 Built the second part of the Blog Capstone Project using a Bootstrap template.  
 Created a multi-page blog website with a responsive navigation bar, dynamically generated blog post pages, and a full-width hero section displaying each post title.  
 Ensured the layout adapts seamlessly across different screen sizes.
-
+<img src="static/assets/img/img_1.png" width="500">
 ---
 
 ## 📝 Tasks
