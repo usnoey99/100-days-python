@@ -10,7 +10,7 @@ Built with Flask, Flask-WTF, Flask-Bootstrap, SQLite, and SQLAlchemy.
 
 
 <img src="templates/img/demo_edit.gif" width="600">
-<img src="templates/img/demo_add.gif" width="350">
+<img src="templates/img/demo_add.gif" width="600">
 
 ---
 
