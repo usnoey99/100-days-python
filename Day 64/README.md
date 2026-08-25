@@ -1,5 +1,3 @@
-from wtforms.fields.simple import SubmitFieldfrom wtforms.fields.simple import StringFieldfrom wtforms.fields.simple import StringFieldfrom flask import render_template
-
 # Day 64 - Best Movies Top 10 Project
 
 ---
