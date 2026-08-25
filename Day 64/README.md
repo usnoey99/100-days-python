@@ -8,9 +8,9 @@ A Flask web application for creating and managing a personal Top 10 Movies list.
 Users can search for movies using The Movie Database (TMDB) API, add movies to their personal list, rate and review them, and automatically rank movies based on their ratings.
 Built with Flask, Flask-WTF, Flask-Bootstrap, SQLite, and SQLAlchemy.
 
-<img src="../templates/img/demo_edit.gif" width="600">
-<img src="../templates/img/demo_add.gif" width="350">
 
+<img src="templates/img/demo_edit.gif" width="600">
+<img src="templates/img/demo_add.gif" width="350">
 
 ---
 
