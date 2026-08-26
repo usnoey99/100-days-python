@@ -1,0 +1,237 @@
+{
+  "info": {
+    "_postman_id": "6c59c1c2-807b-4759-b5d4-4d89b01d9189",
+    "name": "Cafe API",
+    "description": "### Welcome to Postman! This is your first collection.\n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests  \n• Test your API in real-world scenarios  \n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57738866"
+  },
+  "item": [
+    {
+      "name": "Get Random Cafe",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {",
+              "    pm.response.to.have.status(200);",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/random?",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "random"
+          ],
+          "query": [
+            {
+              "key": null,
+              "value": null,
+              "description": "Returns a random cafe from the database.\n\nNo parameters are required.\n",
+              "type": "text"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Cafes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/cafes?",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "cafes"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        },
+        "description": "Returns all cafes from the database.\n\nNo parameters are required."
+      },
+      "response": []
+    },
+    {
+      "name": "Search Cafe",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/search?location=Peckham&",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "search"
+          ],
+          "query": [
+            {
+              "key": "location",
+              "value": "Peckham"
+            },
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        },
+        "description": "Returns all cafes at a specific location.\n\nThe location must be provided as a query parameter."
+      },
+      "response": []
+    },
+    {
+      "name": "Add Cafe",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"can_take_calls\": true,\r\n    \"coffee_price\": \"£2.40\",\r\n    \"has_sockets\": true,\r\n    \"has_toilet\": false,\r\n    \"has_wifi\": true,\r\n    \"img_url\": \"https://lh3.googleusercontent.com/\",\r\n    \"location\": \"AAA\",\r\n    \"map_url\": \"https://g.page\",\r\n    \"name\": \"TEST CAFE ADD\",\r\n    \"seats\": \"20-30\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/add?",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "add"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        },
+        "description": "Adds a new cafe to the database.\n\nThe cafe information must be provided as JSON in the request body."
+      },
+      "response": []
+    },
+    {
+      "name": "Update Coffee Price",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/update-price/22?new_price=£3.40",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "update-price",
+            "22"
+          ],
+          "query": [
+            {
+              "key": "new_price",
+              "value": "£3.40"
+            }
+          ]
+        },
+        "description": "Updates the coffee price of an existing cafe.\n\nThe cafe ID is provided as a path parameter and the new price is provided as a query parameter."
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Closed Cafe",
+      "request": {
+        "auth": {
+          "type": "apikey",
+          "apikey": [
+            {
+              "key": "in",
+              "value": "query",
+              "type": "string"
+            },
+            {
+              "key": "value",
+              "value": "TopSecretAPIKey",
+              "type": "string"
+            },
+            {
+              "key": "key",
+              "value": "api_key",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/delete/22?",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "delete",
+            "22"
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null
+            }
+          ]
+        },
+        "description": "Deletes a closed cafe from the database.\n\nThe cafe ID is provided as a path parameter.\n\nA valid API key is required to authorize the request."
+      },
+      "response": []
+    }
+  ]
+}
