@@ -8,22 +8,13 @@ Restrict access to user profile pages and allow only registered users to downloa
 
 ---
 
-## 🎬 Demo
-
-### Add Post
-<img src="static/assets/img/demo_newPost.gif" width="400">
-
-### Edit Post
-<img src="static/assets/img/demo_editPost.gif" width="400">
-
-### Delete Post
-<img src="static/assets/img/demo_deletePost.gif" width="400">
-
----
-
 ## 📝 Tasks
 
-* 
+* Add user registration and login.
+* Hash and salt passwords.
+* Add login/logout functionality.
+* Restrict pages to authenticated users.
+* Allow registered users to download the cheat sheet.
 
 ---
 
